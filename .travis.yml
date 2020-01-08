@@ -8,4 +8,5 @@ matrix:
       env: TOXENV=py37
   fast_finish: true
 install:
-  - pip install PycURL Django PyVimeo -U pip
+  - install-gnutls.sh 
+  - pip install "requests>=2.4.0" "tuspy==0.2.1" "certifi==2017.7.27.1" "PycURL==7.43.0" Django PyVimeo -U pip
