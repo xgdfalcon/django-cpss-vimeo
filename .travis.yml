@@ -1,5 +1,5 @@
 language: python
-sudo: false
+sudo: true
 matrix:
   include:
     - python: 3.6
@@ -8,5 +8,5 @@ matrix:
       env: TOXENV=py37
   fast_finish: true
 install:
-  - install-gnutls.sh 
+  - apt-get install -y gnutls-bin 
   - pip install "requests>=2.4.0" "tuspy==0.2.1" "certifi==2017.7.27.1" "PycURL==7.43.0" Django PyVimeo -U pip
