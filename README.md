@@ -6,9 +6,6 @@
 [![Build Status](https://travis-ci.org/CPSSw/django-vimeo.svg?branch=master)](https://travis-ci.org/CPSSw/django-vimeo)
 [![PyPI version](https://badge.fury.io/py/django-vimeo.svg)](https://badge.fury.io/py/django-vimeo)
 
-Python Social Auth is an easy to setup social authentication/registration
-mechanism with support for several frameworks and auth providers.
-
 ## Description
 
 This is the [Django](https://www.djangoproject.com/) component of the
@@ -44,5 +41,5 @@ This project follows [Semantic Versioning 2.0.0](http://semver.org/spec/v2.0.0.h
 
 ## License
 
-This project follows the Apache license. See the [LICENSE](LICENSE) for details.
+This project follows the Apache license. See the [LICENSE](LICENSE.md) for details.
 

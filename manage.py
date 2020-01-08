@@ -1,4 +1,14 @@
 #!/usr/bin/env python
+
+#
+# @license
+# Copyright (c) 2020 XGDFalcon®. All Rights Reserved.
+#
+#
+# XGDFalcon LLC retains all intellectual property rights to the code
+# distributed as part of the Control Point System Software (CPSS) package.
+#
+
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
