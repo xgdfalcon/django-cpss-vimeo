@@ -1,0 +1,5 @@
+include LICENSE.md
+include README.md
+recursive-include vimeo/static *
+recursive-include vimeo/templates *
+recursive-include docs *

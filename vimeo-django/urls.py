@@ -28,6 +28,5 @@ from django.conf.urls import include, url
 from . import views
 
 urlpatterns = [
-    path('project/<str:project_id>', views.get_project, name='detail'),
-    # url(r'^project/<str:project_id>$', get_project, name='get_project'),
+    path('project/<str:project_id>', views.get_project, name='projects'),
 ]

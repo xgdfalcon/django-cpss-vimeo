@@ -15,10 +15,6 @@ Written by Larry Latouf (xgdfalcon@gmail.com)
 
 from django.apps import AppConfig
 
-class PythonVimeoAuthConfig(AppConfig):
-    # Full Python path to the application eg. 'django.contrib.admin'.
-    name = 'vimeo_django'
-    # Last component of the Python path to the application eg. 'admin'.
-    label = 'vimeo_django'
-    # Human-readable name for the application eg. "Admin".
-    verbose_name = 'CPSS Vimeo Django'
+class CPSSVimeoConfig(AppConfig):
+    name = 'vimeo-django'
+    verbose_name = "CPSS Vimeo - Django"

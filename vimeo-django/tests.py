@@ -15,13 +15,14 @@ Written by Larry Latouf (xgdfalcon@gmail.com)
 
 from django.test import TestCase
 from django.test.client import RequestFactory
-from vimeo_django.models.client import VimeoClientOption
+from .models.client import VimeoClientOption
+import os
 
-CLIENT_SECRET = "<your-client-secret>"
-CLIENT_ID = "<your-client-id>"
-ACCESS_TOKEN = "<your-access-token>"
-USER_ID = "<your-user-id>"
-PROJECT_ID = "<target-project-id>"
+CLIENT_SECRET = os.environ['CLIENT_SECRET'] 
+CLIENT_ID = os.environ['CLIENT_ID'] 
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN'] 
+USER_ID = os.environ['USER_ID'] 
+PROJECT_ID = os.environ['PROJECT_ID'] 
 
 class VimeoDjangoTestCase(TestCase):
     def setUp(self):

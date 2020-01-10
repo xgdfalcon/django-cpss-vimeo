@@ -8,5 +8,9 @@ matrix:
       env: TOXENV=py37
   fast_finish: true
 install:
-  - apt-get install -y gnutls-bin 
-  - pip install "requests>=2.4.0" "tuspy==0.2.1" "certifi==2017.7.27.1" "PycURL==7.43.0" Django PyVimeo -U pip
+  - apt-cache depends python-pycurl 
+  - sudo apt-get install libcurl4-gnutls-dev libgnutls-dev
+  - sudo apt-get install -y gnutls-bin 
+  - pip install Django wheel "pycurl==7.43.0" "certifi==2017.7.27.1" PyVimeo -U pip
+script:
+  - python manage.py test

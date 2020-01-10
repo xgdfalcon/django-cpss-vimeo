@@ -1,5 +1,0 @@
-Requirement already satisfied: requests in /Users/xgdfalcon/Development/django/env/lib/python3.7/site-packages (2.22.0)
-Requirement already satisfied: idna<2.9,>=2.5 in /Users/xgdfalcon/Development/django/env/lib/python3.7/site-packages (from requests) (2.8)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /Users/xgdfalcon/Development/django/env/lib/python3.7/site-packages (from requests) (1.25.7)
-Requirement already satisfied: certifi>=2017.4.17 in /Users/xgdfalcon/Development/django/env/lib/python3.7/site-packages (from requests) (2017.7.27.1)
-Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /Users/xgdfalcon/Development/django/env/lib/python3.7/site-packages (from requests) (3.0.4)
