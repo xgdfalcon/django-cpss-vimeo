@@ -13,4 +13,4 @@ This python module provides...
 Written by Larry Latouf (xgdfalcon@gmail.com)
 """
 
-__version__ = '2.0.1'
+__version__ = '2.0.2'
