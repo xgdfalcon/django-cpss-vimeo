@@ -2,15 +2,20 @@ language: python
 sudo: true
 matrix:
   include:
-    - python: 3.6
-      env: TOXENV=py36
-    - python: 3.7
-      env: TOXENV=py37
+  - python: 3.6
+    env: TOXENV=py36
+  - python: 3.7
+    env: TOXENV=py37
   fast_finish: true
 install:
-  - apt-cache depends python-pycurl 
-  - sudo apt-get install libcurl4-gnutls-dev libgnutls-dev
-  - sudo apt-get install -y gnutls-bin 
-  - pip install Django wheel "pycurl==7.43.0" "certifi==2017.7.27.1" PyVimeo -U pip
+- apt-cache depends python-pycurl
+- sudo apt-get install libcurl4-gnutls-dev libgnutls-dev
+- sudo apt-get install -y gnutls-bin
+- pip install Django wheel "pycurl==7.43.0" "certifi==2017.7.27.1" PyVimeo -U pip
 script:
-  - python manage.py test
+- python manage.py test
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: Jz/MMnGOcYkKEJqHH/vdYikF8oC4ZUGrd1eOwr1uaHf8sN7xKglEbHhTl5PylKf3mR7FfKMHGjlr+r+AbJr46+xz+f83rLajKNGG203uD3arptGtN1G6I81se9PMlIpQXzgjj91//1UBIthxgB1xy96UGSSigXNirOB5a3e8psyM2tkYMHwO0NS8DgZelTYZQf5hqH4ZoDZJPxn7yHRrl16A4LAzVRiWMXPcxrV/InWiQ1Mg/1WmIAsLSVa796Q1RAKd0n9WE8s2f2QFJze5FVfe79nDv/t+j5pm/2MEkctQj7HOKr8lAqgl8Fg0vbG9YkTmrqsX9G1yJA0EaejAT4sNODmGMeXBksUgXBFcfGG7MA71AuDAw0YarLFukmw0IqqO4U85GhDKsnUqiNmX5O2Rea16RIVzcgadAqIHUKZj962QK4dtqhFH0eE9uo16oAS9NRQC5sbXLWwaUFEznXDCnO7zsaCJTmlRLzG4X9SzpLqJN6ZzTsvM96f5QrVeFKZuOTPJD4cCVAfbGpftLtAXmpTZNkewDjl3Kpla5+n7GQnmUXTvS22b5+b5v0CAgKjFzsyrN8D5sjNEkLDiDEDsMELJ935+g6xY9gdOJxXVgkXahaxG9zGABMjTuaKHpoxSbQekurrKuTiK6h6zRbvWfl/9hZ0IV9rkrGSkePg=
