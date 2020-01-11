@@ -1,10 +1,10 @@
 > ## 🛠 Status: In Development
-> django-vimeo currently in development.
+> django-cpss-vimeo currently in development.
 
 # Python Vimeo API - Django  [<img src="./static/cpss/logo.png" alt="CPSS by XGDFalcon®" height="20px" />](https://controlpointsw.com) 
 
-[![Build Status](https://travis-ci.org/CPSSw/django-vimeo.svg?branch=master)](https://travis-ci.org/CPSSw/django-vimeo)
-[![PyPI version](https://badge.fury.io/py/django-vimeo.svg)](https://badge.fury.io/py/django-vimeo)
+[![Build Status](https://travis-ci.org/CPSSw/django-cpss-vimeo.svg?branch=master)](https://travis-ci.org/CPSSw/django-cpss-vimeo)
+[![PyPI version](https://badge.fury.io/py/django-cpss-vimeo.svg)](https://badge.fury.io/py/django-cpss-vimeo)
 
 ## Description
 
@@ -27,18 +27,18 @@ Project documentation is available at TBP.
 
 ## Setup
 
-1. Add "django-vimeo" to your INSTALLED_APPS setting like this::
+1. Add "django-cpss-vimeo" to your INSTALLED_APPS setting like this::
 ```
     INSTALLED_APPS = [
         ...
         'vimeo-django.CPSSVimeoConfig',
     ]
 ```
-2. Include the django-vimeo URLconf in your project urls.py like this::
+2. Include the django-cpss-vimeo URLconf in your project urls.py like this::
 ```
-    path('vimeo/', include('django-vimeo.urls')),
+    path('vimeo/', include('django-cpss-vimeo.urls')),
 ```
-3. Run `python manage.py migrate` to create the django-vimeo models.
+3. Run `python manage.py migrate` to create the django-cpss-vimeo models.
 
 4. Start the development server and visit http://127.0.0.1:8000/admin/
    to create a poll (you'll need the Admin app enabled).

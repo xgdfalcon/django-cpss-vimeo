@@ -7,7 +7,7 @@
 # distributed as part of the Control Point System Software (CPSS) package.
 #
 """
-WSGI config for django-vimeo project.
+WSGI config for django-cpss-vimeo project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
