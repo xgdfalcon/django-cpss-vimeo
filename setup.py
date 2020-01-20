@@ -16,8 +16,8 @@ from distutils.sysconfig import get_python_lib
 from os.path import join, dirname
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
-    from distutils.core import setup
+    from distutils.core import setup, find_packages
 
 setup()

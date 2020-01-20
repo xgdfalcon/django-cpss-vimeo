@@ -19,8 +19,7 @@ from django.conf import settings
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from django.contrib import admin
-
-from .models.client import VimeoClientOption
+from cpss_vimeo.models import VimeoClientOption
 
 @admin.register(VimeoClientOption)
 class VimeoOptionAdmin(admin.ModelAdmin):

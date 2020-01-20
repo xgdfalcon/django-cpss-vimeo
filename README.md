@@ -31,7 +31,7 @@ Project documentation is available at TBP.
 ```
     INSTALLED_APPS = [
         ...
-        'django_cpss_vimeo.CPSSVimeoConfig',
+        'cpss_vimeo.apps.CPSSVimeoConfig',
     ]
 ```
 2. Include the django-cpss-vimeo URLconf in your project urls.py like this::

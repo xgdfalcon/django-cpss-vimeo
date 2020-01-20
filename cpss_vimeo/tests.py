@@ -15,7 +15,7 @@ Written by Larry Latouf (xgdfalcon@gmail.com)
 
 from django.test import TestCase
 from django.test.client import RequestFactory
-from .models.client import VimeoClientOption
+from .models import VimeoClientOption
 import os
 
 CLIENT_SECRET = os.environ['CLIENT_SECRET'] 

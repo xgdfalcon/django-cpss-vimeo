@@ -17,7 +17,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.contrib.auth.decorators import login_required
-from .models.client import VimeoClientOption
+from .models import VimeoClientOption
 
 @login_required
 def get_project(request, project_id):
