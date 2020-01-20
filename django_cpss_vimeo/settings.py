@@ -40,7 +40,7 @@ ALLOWED_HOSTS = [ 'localhost' ]
 # Application definition
 
 INSTALLED_APPS = [
-    'vimeo-django.apps.CPSSVimeoConfig',
+    'django_cpss_vimeo.apps.CPSSVimeoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sites',
@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'vimeo-django.urls'
+ROOT_URLCONF = 'django_cpss_vimeo.urls'
 
 TEMPLATES = [
     {
@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vimeo-django.wsgi.application'
+WSGI_APPLICATION = 'django_cpss_vimeo.wsgi.application'
 
 
 # Database

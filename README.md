@@ -1,7 +1,7 @@
 > ## 🛠 Status: In Development
 > django-cpss-vimeo currently in development.
 
-# Python Vimeo API - Django  [<img src="https://github.com/xgdfalcon/django-cpss-vimeo/blob/master/vimeo-django/static/cpss/logo.png?raw=true" alt="CPSS by XGDFalcon®" height="20px" />](https://controlpointsw.com) 
+# Python Vimeo API - Django  [<img src="https://github.com/xgdfalcon/django-cpss-vimeo/blob/master/django_cpss_vimeo/static/cpss/logo.png?raw=true" alt="CPSS by XGDFalcon®" height="20px" />](https://controlpointsw.com) 
 
 [![Build Status](https://travis-ci.org/xgdfalcon/django-cpss-vimeo.svg?branch=master)](https://travis-ci.org/xgdfalcon/django-cpss-vimeo)
 [![PyPI version](https://badge.fury.io/py/django-cpss-vimeo.svg)](https://badge.fury.io/py/django-cpss-vimeo)
@@ -31,7 +31,7 @@ Project documentation is available at TBP.
 ```
     INSTALLED_APPS = [
         ...
-        'vimeo-django.CPSSVimeoConfig',
+        'django_cpss_vimeo.CPSSVimeoConfig',
     ]
 ```
 2. Include the django-cpss-vimeo URLconf in your project urls.py like this::

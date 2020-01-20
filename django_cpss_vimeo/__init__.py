@@ -13,8 +13,4 @@ This python module provides...
 Written by Larry Latouf (xgdfalcon@gmail.com)
 """
 
-from django.apps import AppConfig
-
-class CPSSVimeoConfig(AppConfig):
-    name = 'vimeo-django'
-    verbose_name = "CPSS Vimeo - Django"
+__version__ = '2.1'
